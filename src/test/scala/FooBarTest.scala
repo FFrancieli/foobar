@@ -20,7 +20,7 @@ class FooBarTest extends WordSpec {
       "number is divisible by 3" in {
         val foobar: FooBar = new FooBar()
 
-        assert(foobar.calculate(Some(21)) == "foo")
+        assert(foobar.calculate(Some(15)) == "foo")
       }
     }
 
