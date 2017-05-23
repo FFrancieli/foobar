@@ -23,5 +23,19 @@ class FooBarTest extends WordSpec {
         assert(foobar.calculate(Some(21)) == "foo")
       }
     }
+
+    "return bar" when {
+      "number is 7" in {
+        val foobar: FooBar = new FooBar()
+
+        assert(foobar.calculate(Some(7)) == "bar")
+      }
+
+      "number is divisible by 7" in {
+        val foobar: FooBar = new FooBar()
+
+        assert(foobar.calculate(Some(49)) == "bar")
+      }
+    }
   }
 }
